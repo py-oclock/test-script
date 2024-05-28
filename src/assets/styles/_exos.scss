@@ -1,0 +1,128 @@
+.result {
+  padding: .5rem;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.bar {
+  display: block;
+  background-color: white;
+  background-image: linear-gradient(to right bottom, transparent, rgba(0,0,0,.2));
+  height: 20px;
+  border-radius: 5px;
+}
+
+.poll {
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.window {
+  margin: 2rem;
+  border: 1px solid #aaa;
+  border-top-width: 40px;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: relative;
+
+  &::before, &::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 40px;
+    top: -30px;
+    background-color: #ddd;
+    position: absolute;
+  }
+
+  &::after {
+    background-color: #faa;
+    right: 10px;
+  }
+
+  &-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  &-logo {
+    width: 60px;
+    background-color: tomato;
+    border-radius: 60px / 10px;
+  }
+
+  &-link {
+    width: 100px;
+    background-color: #ccc;
+    margin-left: 1rem;
+  }
+  
+  &-channel {
+    margin-left: auto;
+  }
+
+  &-channel .coeur {
+    margin-left: .5rem;
+  }
+
+  .coeur {
+    border: 1px solid #faa;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fdd;
+  }
+
+  .publish {
+    border: 1px solid #aaf;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ddf;
+  }
+
+  .counter {
+    border: 1px solid #afa;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #dfd;
+  }
+
+  &-content {
+    display: flex;
+  }
+
+  &-main {
+    width: calc(100% - 18rem);
+    margin-right: 1rem;
+  }
+
+  &-title {
+    font-size: 2em;
+  }
+
+  &-aside {
+    width: 17rem;
+  }
+
+  &-thumb {
+    display: flex;
+    margin-bottom: 1rem;
+    font-size: .8em;
+    align-items: flex-start;
+  }
+
+  &-ph {
+    height: 20em;
+    margin-top: 1rem;
+    background-image: linear-gradient(to bottom, #ccc, transparent);
+  }
+
+  &-pic {
+    margin-right: .5rem;
+  }
+}

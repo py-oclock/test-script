@@ -1,0 +1,15 @@
+.message {
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 5px;
+
+  &--error {
+    background-color: mistyrose;
+    color: brown;
+  }
+  
+  &--success {
+    background-color: honeydew;
+    color: darkgreen;
+  }
+}
